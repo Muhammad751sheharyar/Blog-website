@@ -4,7 +4,7 @@
     margin: 0% auto;
     height: 500px;
     margin-top: 50px;
-    width: 70%;
+    width: 60%;
     background-color: black;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
- background-color: #0b4b9e;
+ background-color: #4d8cdd;
     height: 100%;
     width: 45%;
     /* background-color: white; */
@@ -72,29 +72,29 @@
      border-bottom-right-radius:50px ;
 }
 .fh{
-    color: black;
+
+    color: gray;
     font-size: 35px;
 }
  .in1 input{
     font-size: 20px;
     color: black;
     height: 80px;
-    width: 350px;
+    width: 100%;
     background-color: rgba(255, 255, 255 ,0.0   );
     border: none;
  }
  .email{
     height: 80px;
-    width: 350px;
-
+    width: 70%;
     display: flex;
-    border-bottom: 3px solid  #0b4b9e;
+    border-bottom: 3px solid   #4d8cdd;
 }
 .pass{
         height: 80px;
-    width: 350px;
+    width: 70%;
     margin-bottom: 50px;
-    border-bottom: 3px solid  #0b4b9e;
+    border-bottom: 3px solid   #4d8cdd;
 }
 .btn {
     /* background-color: red; */
@@ -106,7 +106,7 @@
 .btnf button{
    font-size: 19px;
    color: white;
-    background-color: #0b4b9e;
+    background-color:  #4d8cdd;
     border-radius: 50px;
     height: 50px;
     width: 120px;
@@ -126,5 +126,5 @@ border: 2px solid black;
     height: 30px;
     width: 50px;
     /* background-color: #0b4b9e; */
-    /* color:  #0b4b9e; */
+    color:  gray;
  }
