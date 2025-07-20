@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainPage">
+        <div class="Pheader">
+            <div class="Plogo"><img src="./assects/822729.png" alt=""></div>
+            <div class="Puser"></div>
+            <div class="PlogoutBTN"></div>
+        </div>
+        <div class="from" id="form"> 
+        <!-- <form action=""> -->
+            <input type="text" placeholder="blogTittle" id="blogTittle">
+            <textarea name="text"placeholder="Blog" id="blog"></textarea>
+            <input type="text" placeholder="Author Name" id="authorName">
+            <button onclick="bloges()">submit</button>
+            <!-- <input type="submit" value="Create Blog" id="createBlogbtn" onclick="blog()"> -->
+        <!-- </form> -->
+         </div>
+         <div class="createBlog">
+    <button class="btnp " id="clickbtn" onclick="panel()">Create Blog</button>
+    </div>
+         <div class="panel" id="panel" >
+            <div class="autherName"></div>
+         </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
