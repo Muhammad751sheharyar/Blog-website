@@ -12,14 +12,15 @@
             <div class="Plogo"><img src="./assects/822729.png" alt=""></div>
             <div class="plogoutmain">
                 <div class="userimg"><img src="" alt="sd" srcset=""></div>
-            <p id="userName" class="parap"></p>
-            <div class="PlogoutBTN">LOGOUT</div>
+                  <div class="username" is="userName"></div>
+            <!-- <p id="userName" class="parap"></p> -->
+            <div class="PlogoutBTN" id="blLogout" onclick="blLogout()">LOGOUT</div>
             </div>
         </div>
         <div class="from" id="form"> 
         <!-- <form action=""> -->
             <input type="text" placeholder="blogTittle" id="blogTittle">
-            <textarea name="text"placeholder="Blog" id="blog"></textarea>
+            <textarea name="text"placeholder="Blog" id="blogContent"></textarea>
             <input type="text" placeholder="Author Name" id="authorName">
             <input type="file" placeholder="file" id="file">
 
@@ -30,7 +31,7 @@
          <div class="createBlog">
     <button class="btnp " id="clickbtn" onclick="panel()">Create Blog</button>
     </div>
-         <div class="panel" id="panel" >
+         <div class="blogseciton" id="panel" >
 
             <div class="blogTittle" id="name"></div>
             <div class="decription" id="decription"></div>

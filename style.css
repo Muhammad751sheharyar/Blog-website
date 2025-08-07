@@ -232,7 +232,10 @@ h2{
 /* blog Page */
 
 
-
+.mainPage{
+    height: auto;
+    /* background-color: red; */
+}
 
 .Pmain{
     height: auto;
@@ -315,23 +318,24 @@ textarea{
     height: 100px;
     width: 80%;
 }
-.panel{
+.blogseciton{
+    /* background-color: #2778e0; */
     align-items: center ;
     gap: 20px;
     flex-direction: column;
     display: flex;
-    /* justify-content: center; */
-    left: 200px;
-    position: absolute;
-    bottom: 12px;
-    height: 350px;
+     justify-content: center;
+     left: 200px; 
+     /* position: absolute;  */
+     bottom: 12px; 
+     height: 350px;
     width: 30%;
-    /* background-color: rgb(255, 0, 0); */
-    display: none;
+    /* background-color: rgb(255, 0, 0);  */
+     display: none;
     color: white;
     margin-left:15%;
-    bottom: 30px;
-}
+    bottom: 30px; 
+ } 
 .submit{
     color: white;
     font-size: 20px;
@@ -398,3 +402,16 @@ textarea{
 /* .fImage{
      */
 /* } */
+
+
+
+.log{
+    color: black;
+}
+
+.username{
+    color: black;
+    height: 50px;
+    width: 120px;
+    background-color: red;
+}
