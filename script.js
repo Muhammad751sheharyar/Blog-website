@@ -42,15 +42,26 @@ function loginfnc() {
 }
 
 
-
+let blogesData=[];
 function bloges() {
-
-
   let blognameinp = document.getElementById('blogTittle').value;
   let blogConentinp = document.getElementById('blogContent').value;
   let authorNameinp = document.getElementById('authorName').value;
   form.style.display = "none";
-      
+  
+  let blogD={
+    blognameinp,
+    blogConentinp,
+    authorNameinp
+  }
+  // console.log(blogD);
+window.localStorage.setItem("Blog",JSON.stringify(blogesData));
+blogesData.push(blogD)
+
+
+
+
+
   // Dom Section
 
   let mainPage = document.querySelector('.mainPage');
@@ -81,16 +92,19 @@ other.setAttribute('class','autherName');
 mainPage.append(other);
 console.log(other);
 
+
+
+
+
+
+
 }
-
-
 
 function panel() {
   let form = document.getElementById("form");
   form.style.display = "flex";
   // clickbtn.style.display="none"
 }
-
 
 function blLogout() {
   // window.Location.href="login.html";
