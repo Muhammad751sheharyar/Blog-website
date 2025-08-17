@@ -266,6 +266,11 @@ justify-content: space-between;
     background-color: black;
     /* border: 2px solid black; */
 }
+.username{
+    height: 20px;
+    width: 50px;
+    /* background-color: #2778e0; */
+}
 
 .PlogoutBTN{
     /* text-align: center; */
@@ -318,24 +323,24 @@ textarea{
     height: 100px;
     width: 80%;
 }
-.blogseciton{
-    /* background-color: #2778e0; */
+/* .blogseciton{
+    background-color: #2778e0;
     align-items: center ;
     gap: 20px;
     flex-direction: column;
     display: flex;
      justify-content: center;
      left: 200px; 
-     /* position: absolute;  */
+     position: absolute; 
      bottom: 12px; 
      height: 350px;
     width: 30%;
-    /* background-color: rgb(255, 0, 0);  */
+    background-color: rgb(255, 0, 0); 
      display: none;
     color: white;
     margin-left:15%;
     bottom: 30px; 
- } 
+ }  */
 .submit{
     color: white;
     font-size: 20px;
@@ -346,31 +351,44 @@ textarea{
     border-radius: 30px
 }
 .blogTittle{
+    padding: 20px;
+
+    margin:  0% auto;
     /* font-weight: ; */
     font-size: 30px;
     text-align: center;
-    margin-top: 20px;
-    color: black;
+    /* margin-top: 20px; */
+    color:  white;
     height: 100px;
-    width: 100%;
+    width: 500px;
     /* border: 2px solid navy; */
-    /* background-color: rgb(255, 0, 0);    */
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;   
 }
 .autherName{
+    top: 20px;
+    margin:  auto;
     font-size: 25px;
-    /* margin-top: 20px; */
-    color: black;
-    height: 40px;
-    width: 100%;
-    background-color: white;
+    color: white;
+    height: auto;
+    width: 500px;
+    /* border: 1px solid black; */
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    padding: 20px;
+    
+    background-color:black;
 }
 .decription{
+    padding: 20px;
+    text-align: center;
     font-size: 25px;
-
- color: black;
+margin: 0% auto;
+     color:  white;
     /* height: 120px; */
-    width: 100%;
-    background-color: white;
+    width: 500px;
+    background-color: black;
 }
 .btnp{
     color: rgb(255, 255, 255);
@@ -381,7 +399,6 @@ textarea{
     font-size:18px;
     background-color:  #4d8cdd;
     margin-bottom: 120px;
-
 }
 .btnp:hover{
     transition: all 1s;
@@ -399,19 +416,21 @@ textarea{
 .parap{
     color: black;
 }
-/* .fImage{
-     */
-/* } */
-
-
-
 .log{
     color: black;
 }
-
 .username{
     color: black;
     height: 50px;
     width: 120px;
+    /* background-color: red; */
+}
+#blogdesc{
+    font-size: 25px;
+    /* text-align: center; */
+    margin: 0% auto;
+    height: auto;
+    width: 400px;
     background-color: red;
+
 }
