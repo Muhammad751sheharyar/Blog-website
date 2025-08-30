@@ -1,6 +1,6 @@
 var arrays = JSON.parse(localStorage.getItem("name")) || [];
 function Sinup() {
-  
+
   let email = document.getElementById("email").value;
   let password = document.getElementById("pass").value;
   let users = {
@@ -24,6 +24,10 @@ function Sinup() {
     console.log(arrays);
     window.open("page1.html");
   }
+  // let userd=document.getElementById("userd").innerText=email;
+  // console.log(localStorage.getItem("name"));
+  // document.write(localStorage.getItem("name"));
+
 }
 
 function loginfnc() {
@@ -31,7 +35,7 @@ function loginfnc() {
   // let Lpassword=document.getElementById("Lpassword").value;
   isFound = true;
   for (let i = 0; i < arrays.length; i++) {
-    if (LEmail == arrays[i].email) {
+    if (LEmail == arrays[i].email){
       window.open("page1.html");
       isFound = false;
     }
@@ -42,21 +46,21 @@ function loginfnc() {
 }
 
 
-let blogesData=[];
+let blogesData = [];
 function bloges() {
   let blognameinp = document.getElementById('blogTittle').value;
   let blogConentinp = document.getElementById('blogContent').value;
   let authorNameinp = document.getElementById('authorName').value;
   form.style.display = "none";
-  
-  let blogD={
+
+  let blogD = {
     blognameinp,
     blogConentinp,
     authorNameinp
   }
   // console.log(blogD);
-window.localStorage.setItem("Blog",JSON.stringify(blogesData));
-blogesData.push(blogD)
+  window.localStorage.setItem("Blog", JSON.stringify(blogesData));
+  blogesData.push(blogD)
 
 
 
@@ -71,31 +75,26 @@ blogesData.push(blogD)
   // div 
 
   let div = document.createElement('div');
-  div.innerText=blognameinp;
-  div.setAttribute('class','blogTittle');
+  div.innerText = blognameinp;
+  div.setAttribute('class', 'blogTittle');
   mainPage.append(div);
 
 
 
-  let blogdesc=document.createElement("div");
- blogdesc.innerText=blogConentinp;
-blogdesc.setAttribute('class','decription');
-// console.log(blogdesc);
-mainPage.append(blogdesc);
-console.log(blogdesc)
+  let blogdesc = document.createElement("div");
+  blogdesc.innerText = blogConentinp;
+  blogdesc.setAttribute('class', 'decription');
+  // console.log(blogdesc);
+  mainPage.append(blogdesc);
+  // console.log(blogdesc)
 
 
 
-let other=document.createElement("div");
-other.innerText=authorNameinp;
-other.setAttribute('class','autherName');
-mainPage.append(other);
-console.log(other);
-
-
-
-
-
+  let other = document.createElement("div");
+  other.innerText = authorNameinp;
+  other.setAttribute('class', 'autherName');
+  mainPage.append(other);
+  // console.log(other);
 
 
 }
@@ -103,10 +102,9 @@ console.log(other);
 function panel() {
   let form = document.getElementById("form");
   form.style.display = "flex";
-  // clickbtn.style.display="none"
 }
 
 function blLogout() {
-  // window.Location.href="login.html";
+
   window.open("login.html")
 }
